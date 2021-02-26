@@ -1,10 +1,13 @@
 exports.createProduct = (req,res,next) =>{
-    console.log('request', req.body);
+    const name = req.body.name;
+    const semester = req.body.semester;
     res.json(
         {
             message: "create product success",
             data:{
-                id:1
+                id:1,
+                name: name,
+                semester: semester
             }
         }
     );

@@ -1,0 +1,73 @@
+API
+
+{root.api}/{version}/{grouping}/{endpoint}
+contoh :
+http://mern-api.perpusKu.com/v1/auth/login
+
+status response
+
+200 - OK                      --> Call API Success
+201 - CREATED                 --> Post Success
+400 - BAD REQUEST             --> Error on Client Side 
+401 - UNAUTHORIZED            --> User not Authorized to the request
+403 - FORBIDEN                --> User not allowed to access.
+404 - NOT FOUND               --> Request Endpoint Not Found.
+500 - INTERNAL SERVER ERROR   --> Error on Server Side
+502 - BAD GATEWAY             --> Invalid Response From Another Request
+
+GROUP : Authentication         
+
+[1] - Register
+{root.api}/{version}/auth/Register
+
+req:
+{
+    "name":"bagas",
+    "email":"bagas@gmail.com"
+    "pass":"bagas1"
+}
+
+res:
+{
+    "message":"register success",
+    "data":{
+        "id":1,
+        "name":"bagas",
+        "email":"bagas@gmail.com",
+        "pass":"bagas1"
+    }
+}
+
+error-response:
+400 --> Error on Client Side 
+
+[2] - login
+{root.api}/{version}/auth/login
+
+req:
+{
+    "name":"bagas",
+    "email":"bagas@gmail.com"
+    "pass":"bagas1"
+}
+
+res:
+{
+    "message":"register success",
+    "data":{
+        "id":1,
+        "name":"bagas",
+        "email":"bagas@gmail.com",
+        "pass":"bagas1"
+    }
+}
+
+error-response:
+400 --> Error on Client Side 
+
+GROUP : Blog
+
+[1] - Create Blog Post
+[2] - Get Blog Post
+[3] - Update Blog Post
+[4] - Delete Blog Post
