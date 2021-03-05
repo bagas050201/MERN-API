@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const productRoutes = require('./src/routes/product');
 const authRoutes = require('./src/routes/auth');
 const blogRoutes = require('./src/routes/blog');
+const mongoose = require('mongoose');
 
 app.use(bodyParser.json());
 
@@ -26,4 +27,8 @@ app.use((error,req,res,next) =>{
     res.status(status).json({message:message,data:data})
 })
 
-app.listen(4000);
+mongoose.connect('mongodb+srv://bagaspradana0201:bagas050201@cluster0.pvnpi.mongodb.net/Blog?retryWrites=true&w=majority')
+.then(()=>{
+    app.listen(4000, () => console.log('connection success'));
+})
+.catch(err => console.log(err));
