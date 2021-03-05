@@ -10,3 +10,6 @@
 3. Body Parser module
 
 ## v.1.2 ##
+1. Blog Routes
+2. express validator module
+3. error handling
