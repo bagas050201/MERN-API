@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
+//schema dibawah didapat dari controllers.blog
 const blogPost = new Schema({
     title:{
         type:String,
@@ -8,6 +8,10 @@ const blogPost = new Schema({
     },
     body:{
         type:String,
+        required:true,
+    },
+    image:{
+        type: String,
         required:true,
     },
     author:{
