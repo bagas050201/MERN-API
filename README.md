@@ -13,3 +13,8 @@
 1. Blog Routes
 2. express validator module
 3. error handling
+
+## v.1.3 ##
+1. Mongoose module
+2. models.blog.js
+3. finalizing blog post 
