@@ -18,3 +18,7 @@
 1. Mongoose module
 2. models.blog.js
 3. finalizing blog post 
+
+## v.1.4 ##
+1. Multer module
+2. upload image handling
