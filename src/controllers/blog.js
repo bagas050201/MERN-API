@@ -155,8 +155,9 @@ exports.deleteBlogPost = (req,res,next) => {
 }
 
 const removeImage = (filePath) => {
-    console.log()
-    
+    //dirname location : root/src/controllers
+    //filePath location : root/images/foto.png
+    // location dirname keluar dua kali (keluar dari controllers + keluar dari src) lalu digabung dengan location filePath 
     filePath = path.join(__dirname,'../..',filePath);
     //remove
     fs.unlink(filePath,err => console.log(err));
