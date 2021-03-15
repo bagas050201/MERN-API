@@ -22,3 +22,7 @@
 ## v.1.4 ##
 1. Multer module
 2. upload image handling
+
+## v.1.5 ##
+1. get all / id data from Db controller
+2. update data db controller
