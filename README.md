@@ -26,3 +26,6 @@
 ## v.1.5 ##
 1. get all / id data from Db controller
 2. update data db controller
+
+## v.1.6 ##
+1. delete method
